@@ -15,8 +15,10 @@ Before connecting the data to Tableau, I downloaded the .csv file and viewed it 
 ### 2. EDA and Data Cleaning Key Highlights: 
 - updated the Airport Code to a Geographical Region to enable mapping. 
 - managed 232 NULL values in the `When: Time of Day`, by using  `DATEPART` function on the `Collision Date Time` field to create a Calculated Field called `Time of Day`.
+![Time of day calculation](images/time_of_day_calculation.png)
 - created a `Cost: not Downtime` field.
 - numerically encoded `Effect: Amount of Damage (detailed)` in order to use it for statistical analysis.
+![Numerical damage calculation](images/numerical_damage_calculation.png)
 - created hierarchies for `Location`, `Wildlife` and `Damage`.
 
 ### 2. Visualization
@@ -35,20 +37,23 @@ dataset: [faa_data_subset.xlsx](References/faa_data_subset.xlsx)
 
 ### What states in the USA are most frequently impacted by wildlife strikes? What states are taxed the most i.e. the total costs?
 ![Impact of states](images/impact%20on%20states.png)
+As shown, *California*, *New York* and *Texas* are the hardest hit in terms of cost and frequency.
 
 ### What wildlife category and species are the most frequently encountered, and cost the most damage?
 ![species text](images/species.png)
+95.73% of wildlife attacks are birds, followed by terrestial mammals (2.98%), Bats (1.17%) and Reptiles (0.12%)
 
 ### Trends
-    - What is the trend of wildlife strikes during this period in terms of frequency, impact of damage and the total cost including cost of forced downtime?
-    - Did you notice any significant outlier in the trend and possible cause?
-    - Can future trends be forecasted?
+1. What is the trend of wildlife strikes during this period in terms of frequency, impact of damage and the total cost including cost of forced downtime?
+2. Did I observe any significant outlier in the trend and possible cause?
+3. Can future trends be forecasted?
 ![Forecast](images/forecast.png)
 
-- July - November peak period for wildlife strikes, primarily birds. Coincides with migration patterns.
-- Spike in cost in January 2009. Probaby due to the highly publicized Hudson River landing, which led to increased government regulation and funding into the incidents of wildlife strikes.
-- The frequency of wildlife strikes is forecasted to increase over the years. This is probably the result of the bird population becoming increasingly comfortable with urban areas, and the development of quieter 2-engine aircrafts, which reduces the likelihood of wildlife detecting an engine until it's too late. 
-- However, the impact and cost of these strikes will reduce, due to use of protective measures like more awareness of bird migration patterns, the development of better radar technology, more durable aircraft. 
+- There is a **July - November peak period**  for wildlife strikes, primarily birds. THis can be explained by migration patterns.
+- Spike in cost in **January 2009**. Probaby due to the highly publicized Hudson River landing, which led to increased government regulation and funding into the incidents of wildlife strikes.
+- The frequency of wildlife strikes is **forecasted** to increase over the years. This is probably the result of the wildlife population becoming increasingly comfortable with urban areas, and the development of quieter 2-engine aircrafts, which reduces the ability of these animals to detect these aircrafts. 
+- However, the impact and cost of these strikes will reduce, due to use of protective measures like more awareness of bird migration patterns, the development of better radar technology, and more durable aircraft. 
+- It should be noted that despite the risk involved, the majority of Wildlife Strikes result in no damage or cost. 
 
 ### What periods in flight phase are most likely to encounter wildlife strikes?
 ![Flight phases](images/phase_vs_strikes.png)
@@ -57,20 +62,19 @@ dataset: [faa_data_subset.xlsx](References/faa_data_subset.xlsx)
 ![Engines](images/engine_vs_strikes.png)
 
 ### More results:
-1. What airports have the greatest number of recorded wildlife strikes?
-2. What airports have the highest cost?
-3. Which animal species are the most impactful in each category?
+1. What airports have the greatest number of recorded wildlife strikes? *Dallas International, Texas*
+2. What airports have the highest cost impact? *La Guardia, New York*
+3. What time of day are certain species more likely to attack? *Birds and reptiles predominantly attack during the day, while bats and mammals generally attack at night time.*
 
 The visualizations for these findings can be seen in the Dashboards of [Wildlife Project Tableaux book](Wildlife%20Project.twb)
 
 
 ## Challenges 
-- I started my project using Tableau Public and I faced many challenges, with saving my data and accessing it for previews and updates. I eventually switched to the trial version of Tableau Desktop. 
-- It was difficult to develop the Dashboard in a way that was both aesthetically appealing and communicated the relevant information. 
+- I started my project using Tableau Public and I faced many challenges with saving my data and accessing it for previews and updates. I eventually switched to the trial version of Tableau Desktop. 
 - It was difficult to develop the Forecast because the Time period had to be in discrete dimensions. I generally faced challenges in distinguishing between the proper use of dimensions and measures. 
+- It was difficult to develop the Dashboard in a way that was both aesthetically appealing and communicated the relevant information. 
 
 ## Future Goals
 If given the opportunity to work more on this project, I would like to: 
-- Check modelling accuracy by downloading, if available, the current report on FAA Strikes and compare the forecasted data about frequency, cost and impact in the periods of 2015-2018 against actual records.
+- Download, if available, the current report on FAA Strikes and compare the forecast of 2015-2018 frequency, cost and impact against actual records.
 - Get statistics on the frequence of flight throughout this period to determine the overall probability of a wildlife strike in general commercial flight, and develop models to predict its occurences and potential consequences. 
-
