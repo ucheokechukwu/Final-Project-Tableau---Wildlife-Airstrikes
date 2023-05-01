@@ -39,8 +39,8 @@
   <datasources>
     <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
       <aliases enabled='yes' />
-      <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Aircraft Type&quot;'>
-        <calculation class='tableau' formula='&quot;Aircraft Type&quot;' />
+      <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Time of Day&quot;'>
+        <calculation class='tableau' formula='&quot;Time of Day&quot;' />
         <members>
           <member value='&quot;Time of Day&quot;' />
           <member value='&quot;Phase of Flight&quot;' />
@@ -896,8 +896,8 @@
         </manual-sort>
       </default-sorts>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Aircraft Type&quot;'>
-          <calculation class='tableau' formula='&quot;Aircraft Type&quot;' />
+        <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Time of Day&quot;'>
+          <calculation class='tableau' formula='&quot;Time of Day&quot;' />
         </column>
         <column caption='Dynamic Measures Parameter' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Number of Strikes&quot;'>
           <calculation class='tableau' formula='&quot;Number of Strikes&quot;' />
@@ -2793,8 +2793,8 @@
             <datasource name='Parameters' />
           </datasources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Aircraft Type&quot;'>
-              <calculation class='tableau' formula='&quot;Aircraft Type&quot;' />
+            <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Time of Day&quot;'>
+              <calculation class='tableau' formula='&quot;Time of Day&quot;' />
             </column>
             <column caption='Dynamic Measures Parameter' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Number of Strikes&quot;'>
               <calculation class='tableau' formula='&quot;Number of Strikes&quot;' />
@@ -3125,8 +3125,8 @@
         <datasource name='Parameters' />
       </datasources>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Aircraft Type&quot;'>
-          <calculation class='tableau' formula='&quot;Aircraft Type&quot;' />
+        <column caption='Dynamic Dimension Parameter' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Time of Day&quot;'>
+          <calculation class='tableau' formula='&quot;Time of Day&quot;' />
           <members>
             <member value='&quot;Time of Day&quot;' />
             <member value='&quot;Phase of Flight&quot;' />
@@ -3506,7 +3506,7 @@
       <simple-id uuid='{A6860D9F-8CA9-49CD-89D2-60C43E8D3C41}' />
     </dashboard>
   </dashboards>
-  <windows pres-mode='true' source-height='30'>
+  <windows film-mode='true' pres-mode='true' source-height='30'>
     <window class='dashboard' name='Dashboard Impact on States'>
       <viewpoints>
         <viewpoint name='Map State Density (2)'>
@@ -3584,7 +3584,7 @@
       </viewpoint>
       <simple-id uuid='{DC8BD4F3-E883-4F64-92F1-000B934667FE}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard Animals'>
+    <window class='dashboard' name='Dashboard Animals'>
       <viewpoints>
         <viewpoint name='Map - Species'>
           <zoom type='entire-view' />
@@ -3973,7 +3973,7 @@
       </viewpoint>
       <simple-id uuid='{CD18AA3E-B4A7-4788-80F7-DECD8933D2A2}' />
     </window>
-    <window class='worksheet' name='Pattern of Bird Strikes'>
+    <window class='worksheet' maximized='true' name='Pattern of Bird Strikes'>
       <cards>
         <edge name='left'>
           <strip size='160'>

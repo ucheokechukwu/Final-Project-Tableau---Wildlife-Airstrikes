@@ -37,9 +37,15 @@ dataset: [faa_data_subset.xlsx](References/faa_data_subset.xlsx)
 ![species text](images/species.png)
 
 ### Trends
-    * What is the trend of wildlife strikes during this period in terms of frequency, impact of damage and the total cost including cost of forced downtime?
-    * Can future trends be forecasted?
+    - What is the trend of wildlife strikes during this period in terms of frequency, impact of damage and the total cost including cost of forced downtime?
+    - Did you notice any significant outlier in the trend and possible cause?
+    - Can future trends be forecasted?
 ![Forecast](images/forecast.png)
+**Summary**: 
+- July - November peak period for wildlife strikes, primarily birds. Coincides with migration patterns.
+- Spike in cost in January 2009. Probaby due to the highly publicized Hudson River landing, which led to increased government regulation and funding into the incidents of wildlife strikes.
+- The frequency of wildlife strikes is forecasted to increase over the years. This is probably the result of the bird population becoming increasingly comfortable with urban areas, and the development of quieter 2-engine aircrafts, which reduces the likelihood of wildlife detecting an engine until it's too late. 
+- However, the impact and cost of these strikes will reduce, due to use of protective measures like more awareness of bird migration patterns, the development of better radar technology, more durable aircraft. 
 
 ### What periods in flight phase are most likely to encounter wildlife strikes?
 ![Flight phases](images/phase_vs_strikes.png)
