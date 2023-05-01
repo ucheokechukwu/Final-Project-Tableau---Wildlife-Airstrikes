@@ -16,9 +16,9 @@ Before connecting the data to Tableau, I downloaded the .csv file and viewed it 
 - updated the Airport Code to a Geographical Region to enable mapping. 
 - managed 232 NULL values in the `When: Time of Day`, by using  `DATEPART` function on the `Collision Date Time` field to create a Calculated Field called `Time of Day`.
 ![Time of day calculation](images/time_of_day_calculation.png)
-- created a `Cost: not Downtime` field.
 - numerically encoded `Effect: Amount of Damage (detailed)` in order to use it for statistical analysis.
 ![Numerical damage calculation](images/numerical_damage_calculation.png)
+- created a `Cost: not Downtime` field.
 - created hierarchies for `Location`, `Wildlife` and `Damage`.
 
 ### 2. Visualization
